@@ -39,7 +39,7 @@ bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
 
 # ─── Core constants ─────────────────────────────────────────────────────────────
 
-MAIN_ADMIN_ID   = 1251119503492775956
+MAIN_ADMIN_ID   = 1003134870308012052
 VPS_USER_ROLE_ID = 1431499643698544720
 DOCKER_IMAGE    = "darknodes-vps"
 DOCKERFILE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Dockerfile")
@@ -62,11 +62,11 @@ def get_next_vps_hostname() -> str:
 
 DEFAULT_MINING_CONFIG = {
     # CPU must stay above this % for sustained_duration_minutes before counting
-    "cpu_threshold": 95,
+    "cpu_threshold": 100,
     # Minutes of sustained high CPU required before adding CPU indicator score
-    "sustained_duration_minutes": 20,
+    "sustained_duration_minutes": 30,
     # Confidence score needed to trigger automatic suspension (0-100)
-    "auto_suspend_threshold": 70,
+    "auto_suspend_threshold": 75,
     # Seconds between per-container checks
     "monitoring_interval": 120,
     # Toggle automatic suspension on/off (admins can disable globally)
