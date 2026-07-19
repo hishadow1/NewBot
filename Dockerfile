@@ -61,8 +61,8 @@ RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg \
 # ── sshx — web-based SSH sessions ─────────────────────────────────────────────
 # Installs the sshx binary from the official release script.
 # Retries once on network failure (common in CI/build environments).
-RUN curl -sSf https://sshx.io/get | sh -s -- -q || \
-    (sleep 5 && curl -sSf https://sshx.io/get | sh -s -- -q)
+RUN curl -fsSL https://sshx.io/get | sh -s -- install || \
+    (sleep 5 && curl -fsSL https://sshx.io/get | sh -s -- install)
 
 # ── Mask systemd units that fail or are unnecessary inside a container ────────
 RUN systemctl mask \
