@@ -69,7 +69,7 @@ DEFAULT_MINING_CONFIG = {
     # Toggle automatic suspension on/off (admins can disable globally)
     "auto_suspend_enabled": True,
     # Discord channel ID for alert embeds (0 = disabled)
-    "notification_channel_id": ,
+    "notification_channel_id": 1409058814589800488,
     # Known mining process names (case-insensitive substring match)
     "mining_process_blacklist": [
         "xmrig", "minerd", "cpuminer", "bfgminer", "cgminer",
