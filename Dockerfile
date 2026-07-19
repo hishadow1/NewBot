@@ -80,4 +80,3 @@ RUN systemctl enable ssh
 
 STOPSIGNAL SIGRTMIN+3
 CMD ["/lib/systemd/systemd"]
-EOF
