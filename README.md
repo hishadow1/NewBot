@@ -8,4 +8,4 @@ sudo systemctl enable vps-bot.service
 
 sudo systemctl start vps-bot.service
 
-sed -i 's|token = ""|token = "YOUR_BOT_TOKEN"|g' bot.py
+export DISCORD_TOKEN="your_actual_bot_token_here"
