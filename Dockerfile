@@ -1,7 +1,4 @@
 # ─── DarkNodes VPS Image ─────────────────────────────────────────────────────
-# Base: cruizba/ubuntu-dind (https://github.com/cruizba/ubuntu-dind)
-# The community reference for Ubuntu + systemd + Docker-in-Docker (272 ★).
-# Originally derived from nestybox/sysbox examples (4K ★), adapted for
 # standard --privileged Docker without requiring the sysbox runtime.
 #
 # Bot-specific additions layered on top:
